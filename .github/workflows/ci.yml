@@ -20,6 +20,6 @@ jobs:
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install -e . ".[duckdb]" pytest
+          pip install -e ".[duckdb]" pytest
       - name: Run tests
         run: pytest -q
